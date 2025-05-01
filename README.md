@@ -26,3 +26,16 @@ sudo mkdir -p /var/lib/jenkins/.kube
 sudo cp /etc/kubernetes/admin.conf /var/lib/jenkins/.kube/config
 
 sudo chown -R jenkins:jenkins /var/lib/jenkins/.kube
+
+
+
+
+
+
+
+
+kubeadm init --cri-socket unix:///var/run/crio/crio.sock
+
+mkdir -p $HOME/.kube
+
+export KUBECONFIG=/etc/kubernetes/admin.conf
