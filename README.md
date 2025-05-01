@@ -22,5 +22,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Kubernetes access to jenkins user
 
 sudo mkdir -p /var/lib/jenkins/.kube
+
 sudo cp /etc/kubernetes/admin.conf /var/lib/jenkins/.kube/config
+
 sudo chown -R jenkins:jenkins /var/lib/jenkins/.kube
